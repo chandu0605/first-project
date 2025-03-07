@@ -117,6 +117,7 @@ input{
 .recent-view{
     background-color: aquamarine;
     padding:10px;
+    background-size:50vw;
 }
 
 .recent-images{
