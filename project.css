@@ -5,9 +5,9 @@
     display: flex;
     font-size:25px;
     justify-content:space-evenly;  
-    background-size: auto; 
-    width: auto;
-    height:auto;
+    background-size:100vw; 
+    
+    
     
 }
 
@@ -81,4 +81,46 @@ input{
 .cart-container{
     justify-content:row;
     padding:left;
+}
+
+.category-container{
+    background-color:gray;
+    justify-content: row;
+    display:flex;
+    font-size:15px;
+    justify-content: space-around;
+    
+    
+}
+
+#box-spacing{
+    padding:15px;
+    background-size: 100vw;
+    
+}
+
+.offer-image-container{
+    padding: 15px;
+    height:60px;
+    width:120px;
+    justify-content: flex-end;
+    
+}
+
+.body-container{
+    background-color: blanchedalmond;
+    background-size:100vw;
+    height:100vh;
+    padding:15px;
+}
+
+.recent-view{
+    background-color: aquamarine;
+    padding:10px;
+}
+
+.recent-images{
+    width:10vw;
+    height:30vh;
+    padding:15px;
 }
