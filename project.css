@@ -1,3 +1,6 @@
+@media screen (max-width: 1280){
+    
+
 .head{
     background-color:orange;
     color:white;
@@ -9,6 +12,7 @@
     
     
     
+}
 }
 
 .img-logo-container{
