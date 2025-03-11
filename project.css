@@ -1,5 +1,13 @@
 
-    
+ @media(max-width:1080px){
+    body{
+        background-size:100vw;
+    }
+    .category-container{
+        background-size:100vw;
+    }
+
+ }
 
 .head{
     background-color:orange;
@@ -8,10 +16,7 @@
     display: flex;
     font-size:25px;
     justify-content:space-evenly;  
-    background-size:100vw; 
-    
-    
-    
+    background-size:100vw;   
 }
 
 
@@ -92,7 +97,7 @@ input{
     justify-content: row;
     display:flex;
     font-size:15px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     
     
 }
