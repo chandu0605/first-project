@@ -1,120 +1,304 @@
 
- @media(max-width:1080px){
-    body{
-        background-size:100vw;
+ /* Default Styles (Desktop First Approach) */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    background-color: orange;
+    color: white;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    justify-content: space-evenly;
+    background-size: 100vw;
+    padding: 10px;
+}
+
+.img-logo-container {
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.head-container {
+    display: flex;
+    align-items: center;
+}
+
+.head-content {
+    padding-top: 20px;
+    font-size: 20px;
+    align-items: flex-start;
+}
+
+.search-container {
+    padding-left: 20px;
+    font-size: 15px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.select-container {
+    padding: 10px;
+    color: green;
+    height: 25px;
+}
+
+#flag-container {
+    width: 30px;
+    height: 30px;
+    padding-top: 10px;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    padding: 5px;
+}
+
+#sign-in {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+#orders {
+    font-size: 20px;
+    padding: 10px 30px;
+}
+
+.cart-img-logo-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.cart-container {
+    display: flex;
+    align-items: center;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Tablets (Max Width: 1080px) */
+@media (max-width: 1080px) {
+    body {
+        background-size: 100vw;
     }
+
+    .head {
+        font-size: 22px;
+        flex-wrap: wrap;
+        padding: 8px;
+    }
+
+    .img-logo-container {
+        width: 70px;
+        height: 70px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 80%;
+        height: 25px;
+    }
+
+    #sign-in, #orders {
+        font-size: 18px;
+        padding: 5px 15px;
+    }
+
+    .cart-img-logo-container {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Mobile Screens (Max Width: 768px) */
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .img-logo-container {
+        width: 60px;
+        height: 60px;
+    }
+
+    .search-container {
+        width: 100%;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    input {
+        width: 90%;
+        height: 25px;
+    }
+
+    .select-container {
+        height: 22px;
+        font-size: 12px;
+    }
+
+    #sign-in, #orders {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .cart-img-logo-container {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Small Mobile Screens (Max Width: 480px) */
+@media (max-width: 480px) {
+    .head {
+        font-size: 16px;
+        padding: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-logo-container {
+        width: 50px;
+        height: 50px;
+    }
+
+    input {
+        width: 100%;
+        height: 20px;
+    }
+
+    .category-container {
+        font-size: 12px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart-img-logo-container {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+@media(max-width:1080px){
     .category-container{
         background-size:100vw;
     }
 
  }
 
-.head{
-    background-color:orange;
-    color:white;
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+}
+
+.navbar {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    background-color: #232f3e;
+    padding: 10px 20px;
+    color: white;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
     display: flex;
-    font-size:25px;
-    justify-content:space-evenly;  
-    background-size:100vw;   
+    gap: 15px;
 }
 
-
-.img-logo-container{
-    width:50px;
-    height: 50px;
-    padding:20px;
-    border-radius:30px;
+.nav-links li {
+    padding: 10px;
 }
 
-.head-container{
-    display: flex;
-    justify-items:row;
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
 }
 
-.head-content{
-    padding-top:20px;
-    font-size:20px;
-    align-items: flex-start;
-    
+.nav-links a:hover {
+    text-decoration: underline;
 }
 
-.search-container{
-    padding-left:20px;
-    font-size:15px;
-    padding-top:10px;
-    justify-content:row;
+/* Responsive Design */
+
+/* Tablet View */
+@media (max-width: 1080px) {
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-links li {
+        font-size: 13px;
+    }
 }
 
-.select-container{
-    padding:10px;
-    color:green;
-    height:25px;
-    
+/* Mobile View */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
 
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #232f3e;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
 }
 
-#flag-container{
-    width:15px;
-    height:15px;
-    padding-top:10px;
-
+/* Small Mobile View */
+@media (max-width: 480px) {
+    .nav-links {
+        font-size: 12px;
+    }
 }
 
-input{
-    width:300px;
-    height:20px;
-    border-radius:30px;
-    border-style:none;
-}
-
-#sign-in{
-    justify-content:column;
-    font-size:20px;
-    padding-left:20px;
-    padding-right: 20px;
-}
-
-#orders{
-    font-size:20px;
-    padding-left:30px;
-    padding-right: 40px;
-}
-
-.cart-img-logo-container{
-    width:50px;
-    height: 50px;
-    border-radius:30px;
-}
-
-.cart-container{
-    justify-content:row;
-    padding:left;
-}
-
-.category-container{
-    background-color:gray;
-    justify-content: row;
-    display:flex;
-    font-size:15px;
-    justify-content: space-evenly;
-    
-    
-}
-
-#box-spacing{
-    padding:15px;
-    background-size: 100vw;
-    
-}
-
-.offer-image-container{
-    padding: 15px;
-    height:60px;
-    width:120px;
-    justify-content: flex-end;
-    
-}
 
 .body-container {
     display: flex;
