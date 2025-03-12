@@ -1,6 +1,6 @@
 
  /* Default Styles (Desktop First Approach) */
-body {
+ body {
     font-family: Arial, sans-serif;
 }
 
@@ -326,7 +326,7 @@ body {
 }
 
 .recent-images {
-    width: 100%; /* Ensures images fit */
-    height: auto;
+    width: 75%; /* Ensures images fit */
+    height: 75% ;
     border-radius: 8px;
 }
